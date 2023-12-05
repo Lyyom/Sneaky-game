@@ -28,7 +28,7 @@
 
             var firstMove = false; // Nova variável para rastrear a primeira movimentação
 
-            setInterval(game, 80);
+            setInterval(game, 120);
 
             const vel = 1;
             var gameOver = false;
@@ -39,7 +39,7 @@
             var ax = ay = 15;
 
             var trail = [];
-            tail = 80;
+            tail = 1;
 
             function game() {
                 if (gameOver) {
@@ -85,7 +85,7 @@
                     if (trail[i].x == px && trail[i].y == py) {
                         gameOver = true;
                         vx = vy = 0;
-                        tail = 80;
+                        tail = 1;
                     }
                 }
                 trail.push({ x: px, y: py });
